@@ -12,13 +12,6 @@ const tasksSlice = createSlice({
       };
       state.tasks.push(newTask);
     },
-    resetErrMsg(state, action: PayloadAction<string>) {
-      const newTask = {
-        id: Math.random().toString(),
-        description: action.payload,
-      };
-      state.tasks.push(newTask);
-    },
   },
 });
 
